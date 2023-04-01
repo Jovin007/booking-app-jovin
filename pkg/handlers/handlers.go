@@ -15,7 +15,7 @@ func About(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, "about.page.tmpl")
 }
 
-// Authentication is the handler for the authentication page
-func Authentication(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "authentication.page.tmpl")
+// GetEmail is the handler for the validation page
+func GetEmail(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "get-email.page.tmpl")
 }
