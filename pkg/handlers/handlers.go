@@ -14,3 +14,8 @@ func Home(w http.ResponseWriter, r *http.Request) {
 func About(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, "about.page.tmpl")
 }
+
+// Authentication is the handler for the authentication page
+func Authentication(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "authentication.page.tmpl")
+}
