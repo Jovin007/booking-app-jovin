@@ -23,6 +23,7 @@ func main() {
 	http.HandleFunc("/", handlers.Home)
 	http.HandleFunc("/about", handlers.About)
 	http.HandleFunc("/get-email", handlers.GetEmail)
+	http.HandleFunc("/validate-email", handlers.ValidateEmail)
 
 	fmt.Println(fmt.Sprintf("Staring application on port %s", portNumber))
 	_ = http.ListenAndServe(portNumber, nil)
